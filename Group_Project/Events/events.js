@@ -1,5 +1,5 @@
 
-/* HERO ANIMATION */
+// HERO ANIMATION
 
 const hero = document.querySelector(".hero-content");
 
@@ -10,11 +10,14 @@ window.addEventListener("load", function() {
 });
 
 
-/* SECTION ANIMATIONS */
+// SECTION ANIMATIONS
 
 const sections = document.querySelectorAll(
     ".featured, .section-heading, .event-card, .details-box, .cta"
 );
+
+
+// Add the reveal class to all sections
 
 sections.forEach(function(section) {
 
@@ -23,22 +26,20 @@ sections.forEach(function(section) {
 });
 
 
+// Show the sections when the page loads
+
 window.addEventListener("load", function() {
 
-    setTimeout(function() {
+    sections.forEach(function(section) {
 
-        sections.forEach(function(section) {
+        section.classList.add("show");
 
-            section.classList.add("show");
-
-        });
-
-    }, 100);
+    });
 
 });
 
 
-/* EVENT CARD HOVER ANIMATION */
+// EVENT CARD HOVER ANIMATION
 
 const eventCards = document.querySelectorAll(".event-card");
 
@@ -50,7 +51,6 @@ eventCards.forEach(function(card) {
 
     });
 
-
     card.addEventListener("mouseleave", function() {
 
         card.classList.remove("card-hover");
@@ -60,7 +60,7 @@ eventCards.forEach(function(card) {
 });
 
 
-/* BUTTON HOVER ANIMATION */
+// BUTTON HOVER ANIMATION
 
 const buttons = document.querySelectorAll(".main-btn, .hero-btn");
 
@@ -71,7 +71,6 @@ buttons.forEach(function(button) {
         button.classList.add("button-hover");
 
     });
-
 
     button.addEventListener("mouseleave", function() {
 
