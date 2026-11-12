@@ -1,0 +1,67 @@
+body{
+    background-color: #331a20 !important;
+    padding: 100px;
+}
+
+h1 {
+    margin: 100px;
+    text-align: center;
+    color: #ffffff !important;
+    text-shadow: 2px 2px 5px #E63946;
+}
+
+h3 {
+    color: #D8BFC2 !important;
+    margin: 30px;
+    border: solid;
+    border-color: #51232C;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #65303A;
+}
+
+h3:hover{
+    background-color: #792736;
+    border-color: #B51F32;
+    transform: translateY(-10px);
+    transition: transform 0.4s ease;
+}
+
+form{
+    border: solid;
+    border-color: #51232C;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #65303A;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.form-group{
+    color: #D8BFC2;
+    text-shadow: 2px 2px 5px #E63946;
+    text-align: center;
+}
+
+#exampleInputEmail1{
+    background-color: #792736;
+    color: #D8BFC2 !important;
+}
+
+#exampleInputPassword1{
+    background-color: #792736;
+    color: #D8BFC2 !important;
+}
+
+#emailHelp {
+    color:  #D8BFC2 !important;
+}
+
+#exampleInputEmail1::placeholder {
+    color: #D8BFC2;
+}
+
+#exampleInputPassword1::placeholder {
+    color: #D8BFC2;
+}
+
