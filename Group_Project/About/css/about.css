@@ -37,31 +37,43 @@ form{
     padding-right: 200px;
 }
 
-.form-group{
+.form {
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #51232C;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #65303A;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
     color: #D8BFC2;
     text-shadow: 2px 2px 5px #E63946;
-    text-align: center;
+    text-align: left;
 }
 
-#exampleInputEmail1{
+#exampleInputEmail1,
+#exampleInputPassword1 {
     background-color: #792736;
-    color: #D8BFC2 !important;
-}
-
-#exampleInputPassword1{
-    background-color: #792736;
-    color: #D8BFC2 !important;
-}
-
-#emailHelp {
-    color:  #D8BFC2 !important;
-}
-
-#exampleInputEmail1::placeholder {
     color: #D8BFC2;
+    border: 1px solid #B51F32;
+    border-radius: 10px;
+    padding: 12px;
 }
 
+#exampleInputEmail1::placeholder,
 #exampleInputPassword1::placeholder {
     color: #D8BFC2;
+}
+
+form button {
+    display: block;
+    margin-left: 380px;
+    margin-right: auto;
+    width: 300px;
+    background-color: #51232C !important;
+    border-color: #792736 !important;
 }
 
